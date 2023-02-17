@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+
+    <button id="btn" class="btn btn-default">클래스조작</button>
+
+    <script>
+        //js
+        //document.getElementById("btn").classList.add("myBtn"); //클래스추가
+        //document.getElementById("btn").classList.remove("myBtn"); //클래스추가
+
+        //jquery
+        $("#btn").addClass("myBtn"); //클래스 추가
+        $("#btn").removeClass("myBtn"); //클래스 삭제
+               
+
+    </script>
+
+
+    <button id="tog" class="dark">토글형식</button>
+
+    <script>
+        //제이쿼리 클릭이벤트
+        $("#tog").click(function() {
+            //이벤트 안에서 this는 나 자신태그를 가리킴
+            console.log(this);
+            
+            // this.classList.toggle("dark");
+            $(this).toggleClass("dark");
+            
+        })
+
+
+    </script>
+
+</body>
+</html>

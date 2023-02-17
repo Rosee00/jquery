@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="test1"></div>
+    <div class="test2"></div>
+
+
+    <script>
+        //js
+        //document.querySelector(".test1").innerHTML = "<a href='#'>쉬는시간 주세요</a>";
+
+        //값을 변경
+        $(".test1").html("<a href='#'>쉬는시간 주세요</a>");
+        $(".test1").html(""); //공백을 
+        $(".test1").html("홍길동"); 
+
+
+        //값을 얻음
+        var result = $(".test1").html();
+        console.log(result);
+
+        //text() - 순수한 텍스트로 인식
+        $(".test2").text("<a href='#'>쉬는시간 주세요</a>"); //텍스트로
+
+        
+
+        
+
+    </script>
+
+</body>
+</html>
